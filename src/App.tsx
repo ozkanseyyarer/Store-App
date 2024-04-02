@@ -12,7 +12,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name={"ProductsPage"} component={Products}/>
+        <Stack.Screen name={"ProductsPage"} component={Products}
+        options={{
+          title:"Store App",
+          headerStyle:{backgroundColor:"#34abfa"},
+          headerTitleStyle:{color:"#ffffff",fontWeight: "bold"},
+          headerTitleAlign: "center"
+        }}
+        />
         <Stack.Screen name={"DetailPAge"} component={Detail}/>
       </Stack.Navigator>
     </NavigationContainer>

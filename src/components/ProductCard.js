@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
 
   container:{
     flexDirection:"row",
-    backgroundColor:"rgba(47,43,43,0.18)",
-    borderColor:"#2d2b2b",
+    backgroundColor:"rgba(16,152,239,0.6)",
+    borderColor:"rgba(16,152,239,0.6)",
     borderWidth:0.8,
     margin:10
   },
@@ -43,12 +43,15 @@ const styles = StyleSheet.create({
   },
   title:{
     fontWeight:"bold",
-    fontSize:18
+    fontSize:18,
+    color:"white"
   },
   price:{
     textAlign:"right",
     fontSize:16,
-    fontStyle:"italic"
+    fontStyle:"italic",
+    color:"white"
+
   }
 
 });
