@@ -20,7 +20,16 @@ export default function App() {
           headerTitleAlign: "center"
         }}
         />
-        <Stack.Screen name={"DetailPAge"} component={Detail}/>
+        <Stack.Screen name={"DetailPAge"} component={Detail}
+         options={{
+          title:"Detail",
+          headerStyle:{backgroundColor:"#34abfa"},
+          headerTitleStyle:{color:"#ffffff",fontWeight: "bold"},
+          headerTitleAlign: "center",
+          headerTintColor:"white"
+        }}
+
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

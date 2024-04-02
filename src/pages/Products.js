@@ -12,10 +12,12 @@ export default function Products({navigation}){
 
   const {error,loading,data} = useFetch("https://fakestoreapi.com/products")
 
-  const handleProductSelect = () => {
-    navigation.navigate("DetailPAge")
+  const handleProductSelect = (id) => {
+    navigation.navigate("DetailPAge",{id})
   }
-  const renderProduct = ({item}) => <ProductCard product={item} onSelect={handleProductSelect}/>
+  const renderProduct = ({item}) => (
+    <ProductCard product={item} onSelect={()=>handleProductSelect(item.id)}/>
+  )
 
 
   if (error){
